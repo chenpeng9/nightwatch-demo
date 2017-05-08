@@ -1,5 +1,5 @@
-var seleniumServer = require('selenium-server');
-var phantomjs = require('phantomjs-prebuilt')
+//var seleniumServer = require('selenium-server');
+//var phantomjs = require('phantomjs-prebuilt')
 
 module.exports = {
 	"src_folders": ["tests"],
@@ -11,7 +11,7 @@ module.exports = {
 
 	"selenium": {
 		"start_process": true,
-		"server_path": "./bin/drivers/selenium-server-standalone-2.52.0.jar",
+		"server_path": "./bin/drivers/selenium-server-standalone-3.4.0.jar",
 		"host": "127.0.0.1",
 		"port": 4444,
 		"cli_args": {
@@ -37,11 +37,10 @@ module.exports = {
 			}
 		},
 
-		"phantom": {
-			"desiredCapabilities": {
-				"browserName": "phantomjs",
-				"phantomjs.binary.path": phantomjs.path,
-			}
-		}
+		"firefox": {
+            "desiredCapabilities": {
+                "browserName": "firefox"
+        	}
+        }
 	}
 }

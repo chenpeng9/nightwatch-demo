@@ -7,9 +7,9 @@ module.exports = {
       .assert.visible('input[type=text]')
       .setValue('input[type=text]', 'ThoughtWorks')
       .click('#hplogo')
-      .click('button[name=btnK]')
+      .click('input[type="submit"]:nth-child(1)')
       .pause(1000)
-      .assert.containsText('ol#rso li:first-child',
+      .assert.containsText('#rso > div:nth-child(1)',
         'ThoughtWorks')
       .end();
   }

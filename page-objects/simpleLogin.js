@@ -19,4 +19,4 @@ module.exports = {
         	selector: '#hud-customer-name > div > a'
         }
 	}
-};
+}
