@@ -24,4 +24,6 @@ npm test tests/Amazon
 ```
 
 ## parallel running
+```
 nightwatch tests/GoogleTest --env default,firefox --reporter html-reporter.js
+```
