@@ -1,19 +1,22 @@
-# download dependency
+# Nightwatch
+This is just a simple Demo about how to use Nightwatch to do web UI test.
+
+## download dependency
 ```
 npm install
 ```
 
-# intall reporter
+## install reporter
 ```
 npm install handlebars
 ```
 
-# run with report
+## run with report
 ```
 nightwatch tests/Amazon --reporter html-reporter.js
 ```
 
-# run without report
+## run without report
 ```
 nightwatch tests/Amazon
 or
